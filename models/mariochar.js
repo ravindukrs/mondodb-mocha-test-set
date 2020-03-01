@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+
+
 //Create Schema and Model
 
 const MarioCharSchema = new Schema({
@@ -10,4 +12,4 @@ const MarioCharSchema = new Schema({
 
 const MarioChar = mongoose.model('mariochar', MarioCharSchema);
  
-module.exports = MarioChar;
+module.exports = MarioChar; 
