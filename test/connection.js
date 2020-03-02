@@ -17,5 +17,11 @@ before(function (done) {
     });
 });
 
-
+//Drop the characters collection before each test
+beforeEach(function(done){
+    //Drop Collection
+    mongoose.connection.collections.mariochars.drop(function(){
+        done();
+    });
+});
 
